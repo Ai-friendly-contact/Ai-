@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback, useMemo } from 'react';
 import { QUESTIONS } from './constants';
 import { DiagnosisResult } from './types';
@@ -15,7 +14,10 @@ const AillyLogo = () => (
         Ailly
     </div>
     <p className="text-sm text-gray-600 mt-2 tracking-wide">
-        Ailly（アイリー）｜AI × クリエイティブ × DX支援をワンストップで！
+        Ailly（アイリー）
+        <span className="hidden sm:inline">｜</span>
+        <br className="sm:hidden" />
+        AI × クリエイティブ × DX支援をワンストップで！
     </p>
   </div>
 );
@@ -69,7 +71,7 @@ const App: React.FC = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-green-600 mb-4">
               3分でわかる！
             </h1>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">あなたの会社のAI導入タイプ診断</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">あなたの会社の<br className="sm:hidden" />AI導入タイプ診断</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               いくつかの簡単な質問に答えるだけで、あなたの会社に最適なAI導入の進め方がわかります。
               <br />
