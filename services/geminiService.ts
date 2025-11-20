@@ -1,1 +1,5 @@
-// This file is no longer used. The diagnosis logic has been moved to localDiagnosisService.ts.
+/**
+ * This file is deprecated and no longer used.
+ * All diagnosis logic is handled locally in localDiagnosisService.ts.
+ */
+export {};
